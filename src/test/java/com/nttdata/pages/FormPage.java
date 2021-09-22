@@ -25,4 +25,7 @@ public class FormPage extends BasePage {
 
     @FindBy(id = "userNumber")
     public WebElement MobileNumber;
+
+    @FindBy(id = "submit")
+    public WebElement submitBttn;
 }
