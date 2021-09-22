@@ -1,3 +1,4 @@
+@mobileNumber
 Feature: Mobile Number
 
   Scenario Outline: User should not be able to continue if the mobile number is not correct
