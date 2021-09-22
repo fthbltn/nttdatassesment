@@ -54,15 +54,16 @@ public class EmailField {
     }
 
     @When("user enter the correct {string} format")
-    public void user_enter_the_correct_format(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void user_enter_the_correct_format(String email) {
+
+        formPage.userEmail.sendKeys(email);
     }
 
     @Then("user should be able to submit the form")
     public void user_should_be_able_to_submit_the_form() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+        formPage.submitBttn.submit();
+        System.out.println(Driver.get().findElement(By.xpath("//*[@id=\"example-modal-sizes-title-lg\"]")).getText());
     }
 
 }

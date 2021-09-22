@@ -15,7 +15,7 @@ Feature: Email Field
       | asd@123couk |
 
 
-
+  @wip
   Scenario Outline: User should not be able to continue if the mobile number is not correct
     Given user is on the form page
     When user enter the valid credentials for name
